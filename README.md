@@ -1,4 +1,7 @@
 # ipcheck
+
+**Currently not functional**
+
 Batch script for checking whether IP addresses are flagged for abuse on AbuseIPDB.
 
 Requires key from Abuse IPDB. Steps:
