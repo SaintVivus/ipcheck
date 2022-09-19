@@ -18,7 +18,7 @@ goto %CHOICE%
 :ip
 cls
 set /p IP= What IP do you want to check? 
-curl -s -G https://api.abuseipdb.com/api/v2/check --data-urlencode "ipAddress=%IP%" -d maxAgeInDays=90 -d verbose -H "Key: b22b6cca921f2c5b30b0dd94d9fe37fe615ef432ab14116df066d1e5fd588d28ebfcd8ff19ff5cb3" -H "Accept: application/json"  >> ipresults.json
+curl -s -G https://api.abuseipdb.com/api/v2/check --data-urlencode "ipAddress=%IP%" -d maxAgeInDays=90 -d verbose -H "Key: b22b6cca921f2c5b30b0dd94d9fe37fe615ef432ab14116df066d1e5fd588d28ebfcd8ff19ff5cb3" -H "Accept: application/json"  > ipresults.json
 echo.
 goto start
 
